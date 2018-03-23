@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        theButton1.onclick = function pictureChange() {
+            document.getElementById('theImage').src =
+                "https://s3-eu-central-1.amazonaws.com/centaur-wp/fundstrategy/prod/content/uploads/2014/11/Powe.jpg";
+        }
+
+        theButton2.onclick = function pictureChange() {
+            document.getElementById('theImage').src =
+                "http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+        }
+    </script>
+</head>
+
+<body>
+    <img id="theImage" src="http://31.media.tumblr.com/18b5f8f0a00ad01e50f7ae2f513be52d/tumblr_msqcl4iwM01soh1p8o1_500.png">
+    <p>
+        <input type="button" id="theButton1" value="Pic1" />
+    </p>
+
+    <p>
+        <input type="button" id="theButton2" value="Pic2" />
+    </p>
+
+</body>
+
+</html>
