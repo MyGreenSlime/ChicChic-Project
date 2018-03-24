@@ -65,9 +65,13 @@
 
         .col-sm-4 {
             border: 1px;
+            padding: 10px;
 
         }
-
+        .shadow{
+            -webkit-filter: drop-shadow(5px 5px 5px gray); /* Safari */
+                filter: drop-shadow(5px 5px 5px gray);
+            }
         @media screen and (max-width: 768px) {
             .search {
                 position: fixed;
@@ -84,16 +88,20 @@
 
             .col-sm-4 {
                 border: 1px;
+                padding: 10px;
             }
-     
+            .shadow{
+            -webkit-filter: drop-shadow(5px 5px 5px gray); /* Safari */
+                filter: drop-shadow(5px 5px 5px gray);
+            }
         }
     </style>
 </head>
 <header class="header">
-    <div class="search">
+    <div class="search shadow">
         <form action="male.html">
-            <input type="text" size="40px" placeholder="Search" >
-            <button class="btn" type="submit" >
+            <input class="shadow" type="text" size="40px" placeholder="Search" >
+            <button class="btn shadow" type="submit" >
                 <i class="fa fa-search"></i>
             </button>
     </div>
@@ -102,7 +110,7 @@
 
 <body>
     <div class="container-fluid">
-       
+       <br><br><br>
         <div class="row">
             <div class="col-sm-4">
                 <button id="typeButton" type="button" class="btn btn-primary">
