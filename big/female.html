@@ -13,9 +13,15 @@
                 position: fixed;
                 top: 10px;
                 left: 40%;
+  
             }
             .input{
                 size: 50px;
+
+            }
+            #shadow{
+            -webkit-filter: drop-shadow(5px 5px 5px gray); /* Safari */
+                filter: drop-shadow(5px 5px 5px gray);
             }
             .btn {
     background-color: DodgerBlue; /* Blue background */
@@ -34,15 +40,18 @@
     .search{
         position: fixed;
         left: 5px;
-        }
+        } 
+        #shadow{
+            -webkit-filter: drop-shadow(5px 5px 5px gray); /* Safari */
+                filter: drop-shadow(5px 5px 5px gray);}
 }
     </style>
     </head> 
     <header class="header">
         <div class="search">
-        <form action="male.html" method="get">
-            <input  type="text" size="45px" placeholder="Search">
-            <button class="btn" name="theme" type="submit" ><i class="fa fa-search"></i></button>
+        <form action="female.html" method="get">
+            <input  id="shadow" type="text" size="45px" placeholder="Search">
+            <button id="shadow" class="btn" name="theme" type="submit" ><i class="fa fa-search"></i></button>
         </div>
         </form>
     </header>
