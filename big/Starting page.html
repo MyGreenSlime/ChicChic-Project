@@ -13,13 +13,29 @@
     h1{
         padding: 25px;
     }
+    .container a span {
+    display: block;
+}
+.container a {
+    display: inline-block;
+    vertical-align: top; /* Adjust if multi-line text */
+    margin: 10px;
+    padding: 5px;
+    width: 120px;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+.container a img {
+    display: block;
+    margin: auto;
+    border: 0;
+}
 @media screen and (max-width: 768px) {
 #sizeofpic{
     width: 100px;
 }
-font{
-    size:  10px;
-}
+
 }
 </style>
 </head>
@@ -27,10 +43,12 @@ font{
 <div class="w3-container w3-center w3-animate-top">
     <h1>Select your Gender</h1>
     <br><br>
-    <div class="sizeofpic">
-<a href="female.html" title="Female"><img id ="sizeofpic" class="w3-container w3-center w3-animate-left" src="femaleicon.png" alt="Female"  ></a>
-<a href="male.html" title="Male"><img id ="sizeofpic" class="w3-container w3-center w3-animate-right" src="maleicon.png" alt="male"   ></a>
+    <div >
+        <ul>
+<li><a href="female.html" title="Female"><img id ="sizeofpic" class="w3-container w3-center w3-animate-left" src="femaleicon.png" alt="Female"  >Female</a></li>
+<li><a href="male.html" title="Male"><img id ="sizeofpic" class="w3-container w3-center w3-animate-right" src="maleicon.png" alt="male"   >Male</a></li>
 </div>
+</ul>
 </div>
 </body>
 </html>
