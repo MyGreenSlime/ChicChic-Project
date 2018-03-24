@@ -4,16 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
         <meta name="keyword" content="sairais,ใส้ไร">
-        <title>Sairais</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        <title>Male page sairais</title>
+
         <!-- Do CSS under here(In style) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
@@ -25,24 +17,35 @@
             .input{
                 size: 50px;
             }
+            .btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 6px 6px; /* Some padding */
+    font-size: 10px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
 
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
 @media screen and (max-width: 768px) {
     .search{
         position: fixed;
-        left: 0%;
+        left: 5px;
         }
 }
     </style>
-    </head>
+    </head> <body>
     <header class="header">
         <div class="search">
         <form action="male.html">
-            <input  type="text" size="42px" placeholder="Search">
-            <button type="submit" ><img src="magnifier.png" height="20px" width="20px"></button>
+            <input  type="text" size="45px" placeholder="Search">
+            <button class="btn" type="submit" ><i class="fa fa-search"></i></button>
         </div>
         </form>
     </header>
- <body>
-<p>Hi Sir.</p>
+    <body>
     </body>
 </html>
