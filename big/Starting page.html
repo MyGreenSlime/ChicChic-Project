@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title>Choose Gender</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<meta name="keyword" content="sairais gender,ใส้ไร เพศ">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-    #sizeofpic{
-        width: 400px;
-    }
-    h1{
-        padding: 25px;
-    }
-    .container a span {
-    display: block;
-}
-.container a {
-    display: inline-block;
-    vertical-align: top; /* Adjust if multi-line text */
-    margin: 10px;
-    padding: 5px;
-    width: 120px;
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-}
-.container a img {
-    display: block;
-    margin: auto;
-    border: 0;
-}
-@media screen and (max-width: 768px) {
-#sizeofpic{
-    width: 100px;
-}
 
-}
-</style>
+<head>
+    <title>Choose Gender</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="keyword" content="sairais gender,ใส้ไร เพศ">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        #sizeofpic {
+            width: 400px;
+        }
+
+        .male {
+            position: relative;
+            float: left;
+            left: 35%;
+            padding-top: 10px;
+        }
+
+        .female {
+            position: relative;
+            float: right;
+            right: 35%;
+            padding-top: 10px;
+        }
+
+        h1 {
+            padding: 25px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #sizeofpic {
+                width: 100px;
+            }
+            font {
+                size: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="w3-container w3-center w3-animate-top">
-    <h1>Select your Gender</h1>
-    <br><br>
-    <div >
-        <ul>
-<li><a href="female.html" title="Female"><img id ="sizeofpic" class="w3-container w3-center w3-animate-left" src="femaleicon.png" alt="Female"  >Female</a></li>
-<li><a href="male.html" title="Male"><img id ="sizeofpic" class="w3-container w3-center w3-animate-right" src="maleicon.png" alt="male"   >Male</a></li>
-</div>
-</ul>
-</div>
+    <div class="w3-container w3-center w3-animate-top">
+        <h1>Select your Gender</h1>
+        <br>
+        <br>
+        <div class="sizeofpic">
+            <a href="female.html" title="Female">
+                <img id="sizeofpic" class="w3-container w3-center w3-animate-left" src="femaleicon.png" alt="Female">
+            </a>
+            <a href="male.html" title="Male">
+                <img id="sizeofpic" class="w3-container w3-center w3-animate-right" src="maleicon.png" alt="male">
+            </a>
+        </div>
+    </div>
+    <font class="female">Female</font>
+    <font class="male">Male</font>
 </body>
+
 </html>
